@@ -8,13 +8,9 @@ export default function Home() {
 
   const { poke, isLoading } = useFetchPoke();
 
-  console.log('poke', poke);
-
   const pokemon = poke?.results.map(p => {
     return p;
   }) || [];
-
-  console.log('pokemon', pokemon);
 
   return (
     <div className={styles.container}>
